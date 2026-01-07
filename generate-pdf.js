@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 
 (async () => {
   // 1. Start the server
-  const server = exec('npx http-server -p 8080');
+  const server = exec('npx -y http-server -p 8080');
   
   // Give the server time to start (increased to 5s to be safe)
   await new Promise(r => setTimeout(r, 5000));
@@ -18,7 +18,7 @@ const { exec } = require('child_process');
     const page = await browser.newPage();
 
     // 3. Navigate to localhost
-    await page.goto('http://localhost:8080', { waitUntil: 'networkidle0' });
+    await page.goto('http://localhost:8080', { waitUntil: 'networkidle2' });
 
     // 4. Generate PDF
     await page.pdf({
