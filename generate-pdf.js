@@ -31,7 +31,7 @@ const { exec } = require('child_process');
 
     console.log("STEP 4: Generating PDF...");
     await page.pdf({
-      path: 'assets/Zachary_Butler_Resume_2025.pdf',
+      path: 'assets/Zachary_Butler_Resume_2026.pdf',
       format: 'A4',
       printBackground: true,
       margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' }

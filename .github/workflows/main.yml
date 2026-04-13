@@ -33,5 +33,5 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add assets/Zachary_Butler_Resume_2025.pdf
+          git add assets/Zachary_Butler_Resume_2026.pdf
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generate PDF resume [skip ci]" && git push)
