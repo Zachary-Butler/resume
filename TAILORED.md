@@ -4,7 +4,7 @@ Index of `tailored/*` branches. Each branch is the permanent record of the resum
 
 | Branch | Company | Role | Date sent | Outcome / notes |
 |---|---|---|---|---|
-| _(none yet)_ | | | | |
+| `tailored/gtsc-abmc-producer` | GTSC (The Bowen Group) | Producer/Editor, Multimedia Production Lead (ABMC contract, pending award) | _preparing_ | Tailored 2026-05-05; awaiting submission |
 
 ---
 
