@@ -1,9 +1,31 @@
 const puppeteer = require('puppeteer');
-const { exec } = require('child_process');
+const { exec, execSync } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+
+function resolveOutputPath() {
+  const canonical = 'assets/Zachary_Butler_Resume_2026.pdf';
+  let branch = process.env.GITHUB_REF_NAME || '';
+  if (!branch) {
+    try {
+      branch = execSync('git branch --show-current', { encoding: 'utf8' }).trim();
+    } catch (e) {
+      branch = '';
+    }
+  }
+  if (branch.startsWith('tailored/')) {
+    const slug = branch.slice('tailored/'.length).replace(/\//g, '-');
+    return `assets/tailored/${slug}.pdf`;
+  }
+  return canonical;
+}
+
+const outputPath = resolveOutputPath();
+fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
 (async () => {
-  console.log("STEP 1: Starting local server...");
-  
+  console.log(`STEP 1: Starting local server... (output: ${outputPath})`);
+
   // We use the basic command to see if it prompts for input
   const server = exec('npx http-server -p 8080');
 
@@ -31,7 +53,7 @@ const { exec } = require('child_process');
 
     console.log("STEP 4: Generating PDF...");
     await page.pdf({
-      path: 'assets/Zachary_Butler_Resume_2026.pdf',
+      path: outputPath,
       format: 'A4',
       printBackground: true,
       margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' }
