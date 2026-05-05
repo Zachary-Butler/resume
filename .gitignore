@@ -26,3 +26,7 @@ temp/
 # Backup files
 *.bak
 *.backup
+
+# Node
+node_modules/
+package-lock.json
