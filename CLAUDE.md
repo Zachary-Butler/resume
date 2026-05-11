@@ -23,7 +23,20 @@ Then open http://localhost:8000
 - **css/theme.css** - CSS custom properties for light/dark themes, toggle button styles
 - **css/style.css** - Layout, typography, responsive breakpoints (768px, 480px), print styles
 - **js/theme-toggle.js** - Theme switching with localStorage persistence and system preference detection
+- **tailored/** - Role-specific tailored HTML resume versions (not linked from main page; CSS/JS paths use `../` prefix)
 - **assets/** - PDF resume for download
+  - **assets/tailored/** - Role-specific tailored resume PDFs
+  - **assets/cover-letters/** - Cover letters by application
+
+## Job Search Writing
+
+When writing or revising resumes or cover letters, read `job-search-style-guide.md` first. Key rules:
+- Cover letters use bold-lead competency paragraphs — see the guide for the structure
+- Never open a cover letter with "I am writing to apply for..."
+- Credential emphasis shifts by role type — the guide has an anchor table
+- Sign off as **Zach Butler**, not Zachary Butler
+
+The Health District letter (`assets/cover-letters/Butler_HealthDistrict_cover_letter.pdf`) is the reference example — use it as a model for structure and voice when drafting new cover letters.
 
 ## Theme System
 
