@@ -80,6 +80,7 @@ Sign off as **Zach Butler**, not Zachary Butler. More human.
 - Confident, not boastful. State claims directly without hedging ("I'm a hands-on producer who works well on small teams" — not "I believe I have experience working on small teams").
 - Named specifics everywhere: org names, client names, real numbers. No vague claims.
 - No bullet lists in the body. This is prose.
+- Avoid corporate/business-bot register. Replace jargon nouns with plain descriptions of what actually happened. Example: instead of "project intake workflows, digital asset management, and client-facing delivery systems," write "how projects came in, how files were organized, how finished work got to clients."
 - One tight page. If it runs long, cut from the competency paragraphs, not the opening or close.
 
 ### Portfolio / Links
