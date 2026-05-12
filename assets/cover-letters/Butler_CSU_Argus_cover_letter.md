@@ -1,11 +1,12 @@
 # Zachary Butler
-256.682.3753 | zacharybutler@gmail.com
+
+256.682.3753 | [zacharybutler@gmail.com](mailto:zacharybutler@gmail.com)
 
 ---
 
 To the hiring manager:
 
-I started my career as a classroom teacher — college composition at Montevallo, standardized test prep for Kaplan — before transitioning into video production. At Cornell's Center for Teaching Innovation, those two paths converged: my title evolved from Video Producer to Instructional Media Producer as the work grew to include more of the instructional infrastructure that content lives in. The Program Facilitator role at the Argus Institute is the first position I've found that genuinely calls on both sides of that background.
+I started my career as a classroom teacher — college composition at Montevallo, GRE and LSAT test prep for Kaplan — before transitioning into video production. At Cornell's Center for Teaching Innovation, those two paths converged: my title evolved from Video Producer to Instructional Media Producer as the work grew to include more of the instructional infrastructure that content lives in. The Program Facilitator role at the Argus Institute is the first position I've found that genuinely calls on both sides of that background.
 
 **I've built and delivered online learning experiences working directly alongside faculty and instructional designers.** At Cornell's Center for Teaching Innovation, I co-taught an 8-week faculty development workshop on video-based assignments delivered through Canvas with Panopto-hosted content — developing curriculum, facilitating sessions, and troubleshooting platform access for participants. I also produced two substantial faculty-collaboration projects: a branching-narrative interactive video for a data science ethics course (*Nobody's Fault*), and a full update of an edX MOOC on smartphone engineering with a Cornell computer architecture faculty member.
 

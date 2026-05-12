@@ -3,7 +3,14 @@
     "allow": [
       "Bash(gh api *)",
       "Bash(gh --version)",
-      "Read(//c/Program Files/**)"
+      "Read(//c/Program Files/**)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "WebFetch(domain:www.imdb.com)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git cherry-pick *)"
     ]
   }
 }
