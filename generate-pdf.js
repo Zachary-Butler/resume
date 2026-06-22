@@ -40,7 +40,16 @@ function resolveOutputPath() {
   return canonical;
 }
 
+function resolvePageUrl(outputPath) {
+  if (outputPath.startsWith('assets/tailored/')) {
+    const slug = path.basename(outputPath, '.pdf');
+    return `http://localhost:8080/tailored/${slug}.html`;
+  }
+  return 'http://localhost:8080';
+}
+
 const outputPath = resolveOutputPath();
+const pageUrl = resolvePageUrl(outputPath);
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
 (async () => {
@@ -74,8 +83,8 @@ fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     // Log browser console messages to our node console
     page.on('console', msg => console.log('[BROWSER PAGE LOG]:', msg.text()));
 
-    console.log("STEP 3: Navigating to localhost...");
-    await page.goto('http://localhost:8080', { waitUntil: 'networkidle0' });
+    console.log(`STEP 3: Navigating to ${pageUrl}...`);
+    await page.goto(pageUrl, { waitUntil: 'networkidle0' });
 
     console.log("STEP 4: Generating PDF...");
     await page.pdf({
